@@ -14,6 +14,11 @@ describe("Calcular Cadenas", () => {
         let cadena = "1";
         expect(calcularCadena(cadena)).toEqual(1);
     });
+
+    it("Se devuelve 8 al insertar el numero 8 cadena en la función", () => {
+        let cadena = "8";
+        expect(calcularCadena(cadena)).toEqual(8);
+    });
   });
 
   

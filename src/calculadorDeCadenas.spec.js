@@ -19,6 +19,11 @@ describe("Calcular Cadenas", () => {
         let cadena = "8";
         expect(calcularCadena(cadena)).toEqual(8);
     });
+
+    it("Se implementa la funcionalidad de sumar dos numeros en la cadena ejemplo: '1,1' => 2", () => {
+        let cadena = "1,1";
+        expect(calcularCadena(cadena)).toEqual(2);
+    });
   });
 
   

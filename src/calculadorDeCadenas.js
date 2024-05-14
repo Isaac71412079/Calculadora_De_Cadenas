@@ -8,7 +8,8 @@ function obtenerNumeros(cadena) {
 
     if (cadena.startsWith("//[")) {
         const delimitadorFin = cadena.indexOf("] ");
-        delimitador = new RegExp(cadena.substring(3, delimitadorFin));
+        const delimitadorUsuario = cadena.substring(3, delimitadorFin);
+        delimitador = new RegExp(`[${delimitadorUsuario},-]`);
         cadena = cadena.substring(delimitadorFin + 2);
     }
 

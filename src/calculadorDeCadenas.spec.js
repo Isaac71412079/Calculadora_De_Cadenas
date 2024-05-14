@@ -76,6 +76,11 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toEqual(2);
     });
     
+    it("Se implementa la funcionalidad de ignorar números mayores a 1000 con delimitadores, ejemplo: '2-1001,3' => 5", () => {
+        let cadena = "2-1001,3";
+        expect(calcularCadena(cadena)).toEqual(5);
+    });
+
   });
 
   

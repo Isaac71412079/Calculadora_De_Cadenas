@@ -33,4 +33,9 @@ describe("Refactoring de calculaCadena()", () => {
         expect(sumarNumeros(numeros)).toEqual(6);
     });
 
+    it("En el refactoring de sumarNumeros() se debería manejar correctamente un array con un solo número", () => {
+        const numeros = ["5"];
+        expect(sumarNumeros(numeros)).toEqual(5);
+    });
+
 });

@@ -1,5 +1,9 @@
+function esCadenaVacia(cadena){
+    return cadena === "" || cadena === undefined;
+}
+
 function calcularCadena(cadena) {
-    if (cadena === "" || cadena === undefined) {
+    if (esCadenaVacia(cadena)) {
         return 0;
     }
 

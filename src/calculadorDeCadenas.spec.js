@@ -35,7 +35,10 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toBe("Su cadena tiene un Not a Number");
     });
 
-
+    it("Se implementa la funcionalidad de sumar tres numeros en la cadena ejemplo: '21,14,7' => 42", () => {
+        let cadena = "21,14,7";
+        expect(calcularCadena(cadena)).toEqual(42);
+    });
   });
 
   

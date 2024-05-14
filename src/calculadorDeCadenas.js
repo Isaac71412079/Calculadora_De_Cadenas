@@ -24,7 +24,9 @@ function sumarNumeros(numeros) {
         if (isNaN(numero)) {
             return "Su cadena tiene un Not a Number";
         }
-        suma += numero;
+        if (numero <= 1000) {
+            suma += numero;
+        }
     }
 
     return suma;

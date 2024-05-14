@@ -70,6 +70,12 @@ describe("Calcular Cadenas", () => {
         let cadena = "1-2,3,4-5";
         expect(calcularCadena(cadena)).toEqual(15);
     });
+
+    it("Se implementa la funcionalidad de ignorar números mayores a 1000, ejemplo: '2,1001' => 2", () => {
+        let cadena = "2,1001";
+        expect(calcularCadena(cadena)).toEqual(2);
+    });
+    
   });
 
   

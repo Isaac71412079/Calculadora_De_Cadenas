@@ -92,6 +92,13 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toEqual(6);
     });
 
+    // Nueva prueba para múltiples delimitadores
+    it("Se implementa la funcionalidad de múltiples delimitadores, ejemplo: '//[*][%] 1*2%3,7-9' => 22", () => {
+        let cadena = "//[*][%] 1*2%3,7-9";
+        expect(calcularCadena(cadena)).toEqual(22);
+    });
+
+
   });
 
   

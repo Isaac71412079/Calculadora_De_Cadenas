@@ -3,13 +3,18 @@ function esCadenaVacia(cadena){
     return vacio;
 }
 
+function esExpresionRegular(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Caracteres especiales en expresiones regulares
+}
+
 function obtenerNumeros(cadena) {
     let delimitador = /[,|-]/; // Esta es una expresión para dividr por coma o guion.
 
     if (cadena.startsWith("//[")) {
         const delimitadorFin = cadena.indexOf("] ");
-        const delimitadorUsuario = cadena.substring(3, delimitadorFin);
-        delimitador = new RegExp(`[${delimitadorUsuario},-]`);
+        const delimitadores = cadena.substring(2, delimitadorFin + 1);
+        const delimitadoresArray = delimitadores.match(/\[([^\]]+)\]/g).map(d => d.slice(1, -1));
+        delimitador = new RegExp(delimitadoresArray.map(d => esExpresionRegular(d)).join("|") + "|,|-");
         cadena = cadena.substring(delimitadorFin + 2);
     }
 

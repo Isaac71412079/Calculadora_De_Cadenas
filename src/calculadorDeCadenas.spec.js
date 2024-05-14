@@ -41,6 +41,11 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toEqual(42);
     });
 
+    it("Se implementa la funcionalidad de sumar varios números en la cadena ejemplo: '1,2,4,8' => 15", () => {
+        let cadena = "1,2,4,8";
+        expect(calcularCadena(cadena)).toEqual(15);
+    });
+
   });
 
   

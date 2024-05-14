@@ -65,6 +65,11 @@ describe("Calcular Cadenas", () => {
         let cadena = "//[;] 6,3-2;1";
         expect(calcularCadena(cadena)).toEqual(12);
     });
+
+    it("Se implementa la funcionalidad de sumar números con delimitadores con guion y coma, ejemplo: '1-2,3,4-5' => 15", () => {
+        let cadena = "1-2,3,4-5";
+        expect(calcularCadena(cadena)).toEqual(15);
+    });
   });
 
   

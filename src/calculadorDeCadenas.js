@@ -3,12 +3,16 @@ function esCadenaVacia(cadena){
     return vacio;
 }
 
+function obtenerNumeros(cadena) {
+    return cadena.split(",");
+}
+
 function calcularCadena(cadena) {
     if (esCadenaVacia(cadena)) {
         return 0;
     }
 
-    let numeros = cadena.split(",");
+    let numeros = obtenerNumeros(cadena);
     let sumaDeLaCadena = 0;
 
     for (let i = 0; i < numeros.length; i++) {
@@ -22,4 +26,4 @@ function calcularCadena(cadena) {
     return sumaDeLaCadena;
 }
 
-export { esCadenaVacia, calcularCadena };
+export { esCadenaVacia, obtenerNumeros, calcularCadena };

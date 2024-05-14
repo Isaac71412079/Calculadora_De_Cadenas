@@ -1,4 +1,4 @@
-import { esCadenaVacia, calcularCadena } from "./calculadorDeCadenas";
+import { esCadenaVacia, obtenerNumeros,calcularCadena } from "./calculadorDeCadenas";
 
 
 describe("Calcular Cadenas", () => {

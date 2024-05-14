@@ -24,6 +24,11 @@ describe("Calcular Cadenas", () => {
         let cadena = "1,1";
         expect(calcularCadena(cadena)).toEqual(2);
     });
+
+    it("Se implementa la funcionalidad de sumar dos numeros en la cadena ejemplo: '21,14' => 35", () => {
+        let cadena = "21,14";
+        expect(calcularCadena(cadena)).toEqual(35);
+    });
   });
 
   

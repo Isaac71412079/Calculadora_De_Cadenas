@@ -2,7 +2,7 @@ function calcularCadena(cadena) {
     if (cadena === "" || cadena === undefined) {
         return 0;
     }
-
+    
     let numeros = cadena.split(",");
     let sumaDeLaCadena = 0;
 

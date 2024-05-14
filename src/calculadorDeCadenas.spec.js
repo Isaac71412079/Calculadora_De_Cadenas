@@ -46,6 +46,11 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toEqual(15);
     });
 
+    it("Se implementa la funcionalidad de sumar números separados por guion en la cadena ejemplo: '1-2,3' => 6", () => {
+        let cadena = "1-2,3";
+        expect(calcularCadena(cadena)).toEqual(6);
+    });
+
   });
 
   

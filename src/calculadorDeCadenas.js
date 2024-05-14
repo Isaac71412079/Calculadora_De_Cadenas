@@ -4,7 +4,7 @@ function esCadenaVacia(cadena){
 }
 
 function obtenerNumeros(cadena) {
-    return cadena.split(",");
+    return cadena.split(/[,|-]/); // Esta es una expresión para dividr por coma o guion.
 }
 
 function sumarNumeros(numeros) {

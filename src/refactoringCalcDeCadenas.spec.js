@@ -23,4 +23,9 @@ describe("Refactoring de calculaCadena()", () => {
         expect(obtenerNumeros(cadena)).toEqual(["1", "2"]);
     });
 
+    it("En el refactoring de obtenerNumero() se debería manejar correctamente una cadena con múltiples números separados por comas", () => {
+        const cadena = "1,2,3,4";
+        expect(obtenerNumeros(cadena)).toEqual(["1", "2", "3", "4"]);
+    });
+
 });

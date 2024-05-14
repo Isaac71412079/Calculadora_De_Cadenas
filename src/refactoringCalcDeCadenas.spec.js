@@ -18,4 +18,9 @@ describe("Refactoring de calculaCadena()", () => {
         expect(obtenerNumeros(cadena)).toEqual(["1"]);
     });
 
+    it("Refactoring de obtenerNumero() donde debería devolver un array con dos números para una cadena con dos números separados por coma", () => {
+        const cadena = "1,2";
+        expect(obtenerNumeros(cadena)).toEqual(["1", "2"]);
+    });
+
 });

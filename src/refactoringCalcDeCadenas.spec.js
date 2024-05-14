@@ -9,4 +9,8 @@ describe("Refactoring de calculaCadena()", () => {
         expect(esCadenaVacia("1")).toBe(false);
     });
 
+    it("Refactoring de esCadenaVacia() donde debería devolver false para una cadena con espacios", () => {
+        expect(esCadenaVacia(" ")).toBe(false);
+    });
+
 });

@@ -5,4 +5,8 @@ describe("Refactoring de calculaCadena()", () => {
         expect(esCadenaVacia("")).toBe(true);
     });
 
+    it("Refactoring de esCadenaVacia() donde debería devolver false para una cadena no vacía", () => {
+        expect(esCadenaVacia("1")).toBe(false);
+    });
+
 });

@@ -4,7 +4,15 @@ function esCadenaVacia(cadena){
 }
 
 function obtenerNumeros(cadena) {
-    return cadena.split(/[,|-]/); // Esta es una expresión para dividr por coma o guion.
+    let delimitador = /[,|-]/; // Esta es una expresión para dividr por coma o guion.
+
+    if (cadena.startsWith("//[")) {
+        const delimitadorFin = cadena.indexOf("] ");
+        delimitador = new RegExp(cadena.substring(3, delimitadorFin));
+        cadena = cadena.substring(delimitadorFin + 2);
+    }
+
+    return cadena.split(delimitador);
 }
 
 function sumarNumeros(numeros) {

@@ -55,6 +55,11 @@ describe("Calcular Cadenas", () => {
         let cadena = "1-2,3,1-3";
         expect(calcularCadena(cadena)).toEqual(10);
     });
+
+    it("Se implementa la funcionalidad de especificar delimitador, ejemplo: '//[;] 6;7;4' => 17", () => {
+        let cadena = "//[;] 6;7;4";
+        expect(calcularCadena(cadena)).toEqual(17);
+    });
   });
 
   

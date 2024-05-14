@@ -13,4 +13,9 @@ describe("Refactoring de calculaCadena()", () => {
         expect(esCadenaVacia(" ")).toBe(false);
     });
 
+    it("Se implmento el Refactoring de obtnerNumero() donde se devuelve un array con un solo número para una cadena con un solo número", () => {
+        const cadena = "1";
+        expect(obtenerNumeros(cadena)).toEqual(["1"]);
+    });
+
 });

@@ -81,6 +81,12 @@ describe("Calcular Cadenas", () => {
         expect(calcularCadena(cadena)).toEqual(5);
     });
 
+    //OPCIONALES:
+    it("Se implementa la PRUEBA de delimitador de cualquier longitud, ejemplo: '//[***] 1***2***3' => 6", () => {
+        let cadena = "//[***] 1***2***3";
+        expect(calcularCadena(cadena)).toEqual(6);
+    });
+
   });
 
   

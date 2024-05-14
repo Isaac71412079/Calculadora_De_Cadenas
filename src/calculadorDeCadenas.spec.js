@@ -1,4 +1,5 @@
-import calcularCadena from "./calculadorDeCadenas";
+import { esCadenaVacia, calcularCadena } from "./calculadorDeCadenas";
+
 
 describe("Calcular Cadenas", () => {
     it("Implementación inicial: devuelve 0 para cadena vacía", () => {
@@ -39,6 +40,7 @@ describe("Calcular Cadenas", () => {
         let cadena = "21,14,7";
         expect(calcularCadena(cadena)).toEqual(42);
     });
+
   });
 
   

@@ -1,5 +1,6 @@
 function esCadenaVacia(cadena){
-    return cadena === "" || cadena === undefined;
+    let vacio = cadena === "" || cadena === undefined;
+    return vacio;
 }
 
 function calcularCadena(cadena) {
@@ -21,4 +22,4 @@ function calcularCadena(cadena) {
     return sumaDeLaCadena;
 }
 
-export default calcularCadena;
+export { esCadenaVacia, calcularCadena };

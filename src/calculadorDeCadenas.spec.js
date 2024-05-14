@@ -29,6 +29,13 @@ describe("Calcular Cadenas", () => {
         let cadena = "21,14";
         expect(calcularCadena(cadena)).toEqual(35);
     });
+
+    it("Devuelve mensaje de error para una cadena con caracteres no numéricos", () => {
+        let cadena = "1,a";
+        expect(calcularCadena(cadena)).toBe("Su cadena tiene un Not a Number");
+    });
+
+
   });
 
   

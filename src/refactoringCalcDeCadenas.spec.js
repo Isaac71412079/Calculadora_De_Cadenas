@@ -38,4 +38,9 @@ describe("Refactoring de calculaCadena()", () => {
         expect(sumarNumeros(numeros)).toEqual(5);
     });
 
+    it("En el refactoring de sumarNumeros() se debería devolver un mensaje de error si el array contiene un valor no numérico", () => {
+        const numeros = ["1", "a", "3"];
+        expect(sumarNumeros(numeros)).toEqual("Su cadena tiene un Not a Number");
+    });
+
 });

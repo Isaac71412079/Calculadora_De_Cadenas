@@ -1,4 +1,4 @@
-import { esCadenaVacia, obtenerNumeros, sumarNumeros,sumarCadena } from "./calculadorDeCadenas";
+import { determinarVacioONulo, obtenerNumeros, sumarNumeros,sumarCadena } from "./calculadorDeCadenas";
 
 
 describe("Calcular Cadenas", () => {

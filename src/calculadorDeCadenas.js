@@ -1,5 +1,5 @@
 function sumarCadena(cadena) {
-    if (esCadenaVacia(cadena)) {
+    if (determinarVacioONulo(cadena)) {
         return 0;
     }
 
@@ -7,12 +7,12 @@ function sumarCadena(cadena) {
     return sumarNumeros(numeros);
 }
 
-function esCadenaVacia(cadena){
+function determinarVacioONulo(cadena){
     let vacio = cadena === "" || cadena === undefined;
     return vacio;
 }
 
-function esExpresionRegular(string) {
+function determinarExpresionRegular(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // Caracteres especiales en expresiones regulares
 }
 
@@ -23,7 +23,7 @@ function obtenerNumeros(cadena) {
         const delimitadorFin = cadena.indexOf("] ");
         const delimitadores = cadena.substring(2, delimitadorFin + 1);
         const delimitadoresArray = delimitadores.match(/\[([^\]]+)\]/g).map(d => d.slice(1, -1));
-        delimitador = new RegExp(delimitadoresArray.map(d => esExpresionRegular(d)).join("|") + "|,|-");
+        delimitador = new RegExp(delimitadoresArray.map(d => determinarExpresionRegular(d)).join("|") + "|,|-");
         cadena = cadena.substring(delimitadorFin + 2);
     }
 
@@ -46,4 +46,4 @@ function sumarNumeros(numeros) {
     return suma;
 }
 
-export { esCadenaVacia, obtenerNumeros, sumarNumeros, sumarCadena };
+export { sumarCadena, determinarVacioONulo, obtenerNumeros, sumarNumeros };

@@ -1,4 +1,4 @@
-import { esCadenaVacia, obtenerNumeros, sumarNumeros, calcularCadena } from "./calculadorDeCadenas.js";
+import { esCadenaVacia, obtenerNumeros, sumarNumeros, sumarCadena } from "./calculadorDeCadenas.js";
 
 describe("Refactoring de calculaCadena()", () => {
     it("Refactoring de esCadenaVacia() donde debería devolver true para una cadena vacía", () => {

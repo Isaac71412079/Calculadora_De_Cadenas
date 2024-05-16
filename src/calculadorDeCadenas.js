@@ -1,3 +1,12 @@
+function sumarCadena(cadena) {
+    if (esCadenaVacia(cadena)) {
+        return 0;
+    }
+
+    let numeros = obtenerNumeros(cadena);
+    return sumarNumeros(numeros);
+}
+
 function esCadenaVacia(cadena){
     let vacio = cadena === "" || cadena === undefined;
     return vacio;
@@ -37,13 +46,4 @@ function sumarNumeros(numeros) {
     return suma;
 }
 
-function calcularCadena(cadena) {
-    if (esCadenaVacia(cadena)) {
-        return 0;
-    }
-
-    let numeros = obtenerNumeros(cadena);
-    return sumarNumeros(numeros);
-}
-
-export { esCadenaVacia, obtenerNumeros, sumarNumeros, calcularCadena };
+export { esCadenaVacia, obtenerNumeros, sumarNumeros, sumarCadena };

@@ -1,4 +1,4 @@
-import { calcularCadena } from "./calculadorDeCadenas.js";
+import { sumarCadena } from "./calculadorDeCadenas.js";
 
 const cadenaInput = document.querySelector("#cadena");
 const delimitadoresInput = document.querySelector("#delimitadores");
@@ -15,6 +15,6 @@ form.addEventListener("submit", (event) => {
     cadena = delimitadores + " " + cadena;
   }
 
-  const resultado = calcularCadena(cadena);
+  const resultado = sumarCadena(cadena);
   div.innerHTML = `<p>${resultado}</p>`;
 });
